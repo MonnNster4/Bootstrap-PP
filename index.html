@@ -8,12 +8,7 @@
 </head>
 <body>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-</body>
-</html>
+ 
 
      <div class="container">
         <h1>Bootstrap</h1>
@@ -121,6 +116,276 @@
         </tr>
       </table>
     </section>
-        
-     </div> 
+
+    <section class="mb-5">
+        <h2>Forms</h2>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" class="form-control" placeholder="Enter email">
+            <small class="form-text text-muted">Enter a valid email</small>
+        </div> 
+    </section>
+
+    <section class="mb-5">
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" class="form-control" placeholder="Enter password">
+        </div>
+    </section>
+
+    <div class="form-group">
+        <label>Select</label>
+        <select class="form-control">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>TextArea</label>
+        <textarea type="text" class="form-control" cols="30" rows="10" placeholder="Text area"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Disabled Input</label>
+        <input type="text" class="form-control" placeholder="Submit" disabled>
+    </div>
+
+    <div class="form-group">
+        <label>Readonly Input</label>
+        <input type="text" class="form-control" readonly="true">
+    </div>
+
+    <div class="form-group">
+        <label>Valid Input</label>
+        <input type="text" class="form-control is-valid">
+        <div class="valid-feedback">Success!</div>
+    </div> 
+
+    <div class="form-group">
+        <label>Invalid Input</label>
+        <input type="text" class="form-control is-invalid">
+        <div class="invalid-feedback">Error!</div>
+    </div> 
+
+    <div class="form-group">
+        <label>Large Input</label>
+        <input placeholder="large textbox" type="text" class="form-control form-control-lg">
+    </div>
+
+    <div class="form-group">
+        <label>Small Input</label>
+        <input placeholder="small textbox" type="text" class="form-control form-control-sm">
+    </div>
+
+    <fieldset>
+    <div class="form-group">
+        <legend>Custom Form Elements</legend>
+        <div class="custom-control custom-radio">
+        <input type="radio" name="customRadio" checked="" class="custom-control-input" id="customRadio1">
+        <label class="custom-control-label" for="customRadio1">Toggle custom radio</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="custom-control custom-radio">
+        <input type="radio" name="customRadio" class="custom-control-input" id="customRadio2">
+        <label class="custom-control-label" for="customRadio2">Toggle custom radio</label>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <div class="custom-control custom-radio">
+        <input type="radio" name="customRadio" class="custom-control-input" id="customRadio3">
+        <label class="custom-control-label" for="customRadio3">Toggle custom radio</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="custom-control custom-checkbox">
+           <input type="checkbox" id="customCheckbox" class="custom-control-input" name="checkBox">
+           <label for="customCheckbox" class="custom-control-label"></label>
+        </div>
+    </div>
+    </fieldset>
  
+    <section class="mb-5">
+        <h2>Tabs</h2>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#home" class="nav-link active" data-toggle="tab" >Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link" data-toggle="tab" >About</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active show" id="home">
+                <h2>Home</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem alias id, nostrum at porro recusandae rem itaque tenetur nemo consequatur sint provident, nulla, quos voluptas. Sint quas magnam numquam.</p>
+            </div>
+
+            <div class="tab-pane" id="about">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem alias id, nostrum at porro recusandae rem itaque tenetur nemo consequatur sint provident, nulla, quos voluptas. Sint quas magnam numquam.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="mb-5">
+        <h2>Alert</h2>
+        <div class="alert alert-success">
+            <h4 class="alert-heading">Success!</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi at necessitatibus rerum minus facere cum quas maiores, ipsum praesentium unde. Debitis quaerat, vel blanditiis architecto nisi provident ea veritatis voluptatum!</p>
+        </div>
+        <div class="alert alert-dismissible alert-warning">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4 class="alert-heading">Success!</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi at necessitatibus rerum minus facere cum quas maiores, ipsum praesentium unde. Debitis quaerat, vel blanditiis architecto nisi provident ea veritatis voluptatum!</p>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <h2>Badge</h2>
+        <span class="badge badge-primary">Primary</span>
+        <span class="badge badge-secondary">Secondary</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-danger">Danger</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-info">Info</span>
+        <span class="badge badge-light">Light</span>
+        <span class="badge badge-dark">Dark</span>
+    </section>
+
+    <section class="mb-5">
+        <h2>Progress Bar</h2>
+        <div class="progress mb-2">
+            <div class="progress-bar" style="width: 25%;" aria-valuenow="25" aria-valuemax="100">25%</div>
+        </div>
+        <div class="progress mb-2">
+            <div class="progress-bar bg-success" style="width: 50%;" aria-valuenow="50" aria-valuemax="100">50%</div>
+        </div>
+        <div class="progress mb-2">
+            <div class="progress-bar bg-danger" style="width: 75%;" aria-valuenow="75" aria-valuemax="100">75%</div>
+        </div>
+        <div class="progress mb-2">
+            <div class="progress-bar bg-warning" style="width: 100%;" aria-valuenow="100" aria-valuemax="100">100%</div>
+        </div>
+
+    </section>
+
+    <section class="mb-5">
+        <h2>Container</h2>
+
+        <div class="jumbotron">
+            <h1>Hello Home!</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis saepe, qui a laborum, sint pariatur in sequi perspiciatis nesciunt animi rem nisi quo. Modi, sit minus! Sequi alias placeat recusandae?</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, beatae.
+                <a href="#" class="btn btn-primary btn-lg">Start Now</a>
+            </p>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <h2>List Group</h2>
+        <div class="list-grou">
+            <a href="" class="list-group-item list-group-item-action active">List 1</a>
+            <a href="" class="list-group-item list-group-item-action ">List 2</a>
+            <a href="" class="list-group-item ">List 3</a>
+            <a href="" class="list-group-item list-group-item-action ">List 4</a>
+
+        </div> 
+    </section>
+
+    <section class="mb-5">
+        <h2>Cards</h2>
+
+        <div class="card mb-3 bg-dark text-white" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <h4 class="card-title">Card Title</h4>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, libero?
+                </p>
+            </div>
+        </div>
+
+        <div class="card mb-3 bg-primary text-white" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <h4 class="card-title">Card Title</h4>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, libero?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <h2>Dialogs - Popover</h2>
+
+        <button type="button" class="btn btn-secondary" title="left" data-container="Body" data-toggle="popover" data-placement="left" data-content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, libero?">Left</button>
+
+        <button type="button" class="btn btn-secondary" title="top" data-container="Body" data-toggle="popover" data-placement="top" data-content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, libero?">Top</button>
+    </section>
+
+    <section class="mb-5">
+        <h2>Dialogs - Tooltip</h2>bottom
+
+        <button type="button" class="btn btn-secondary" data-original-title="Tooltip left" data-toggle="tooltip" data-placement="left">Left</button>
+        <button type="button" class="btn btn-secondary" data-original-title="Tooltip top" data-toggle="tooltip" data-placement="top">Top</button>
+        <button type="button" class="btn btn-secondary" data-original-title="Tooltip bottom" data-toggle="tooltip" data-placement="bottom">bottom</button>
+        <button type="button" class="btn btn-secondary" data-original-title="Tooltip right" data-toggle="tooltip" data-placement="right">Right</button>
+
+    </section>
+
+    <section class="mb-5">
+        <h2>Modal</h2>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Show Modal</button>
+
+        <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Modal Title</div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="clse">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat odit quaerat illum a eaque quo. Porro delectus quae magnam nam.
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save Change</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close Modal</button>
+ 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div> 
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+<script>
+    $(function(){
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+</body>
+</html>
+    
